@@ -1,0 +1,197 @@
+<!--11 Days of Design with ONLY HTML AND CSS -->
+<!-- DAY 5: WALL CLOCK-->
+<!-- AUTHOR: DUNSIN OLUBOBOKUN -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wall Clock</title>
+	<style type="text/css">
+		.container{
+			text-align: center;
+			padding: 50px;
+		}
+		.clock-border{
+			display: inline-block;
+			height: 300px;
+			width: 300px;
+			border-radius: 20px;
+			border: 1px solid #000;
+			padding: 50px;
+			background: #333;
+		}
+		.clock-circle{
+			display: inline-block;
+			height: 300px;
+			width: 300px;
+			border-radius: 50%;
+			border: 1px solid #aaa;
+			background: #fff;
+		}
+		.clock-circle-inner{
+			display: inline-block;
+			border-radius: 50%;
+			height: 30px;
+			width: 30px;
+			border: 1px solid #444;
+			/*box-shadow: 2px 4px 5px #aaa;*/
+			position: relative;
+			top:137px;
+			z-index: 1;
+			background: #fff;
+		}
+		.clock-circle-inner-inner{
+			display: inline-block;
+			border-radius: 50%;
+			height: 10px;
+			width: 10px;
+			border: 1px solid #f55;
+			box-shadow: 2px 4px 5px #aaa;
+			position: relative;
+			top:7px;
+			background: #f55;
+		}
+		.numbers{
+			position: relative;
+			top:15px;
+			font-size: 17px;
+			font-family: arial;
+		}
+		.numbers #no12{
+			position: relative;
+			top: -40px;
+		}
+		.numbers #no1{
+			position: relative;
+			top: -33px;
+			left: 67px;
+		}
+		.numbers #no2{
+			position: relative;
+			top: -4px;
+			left: 112px;
+		}
+		.numbers #no3{
+			position: relative;
+			top: 37px;
+			left: 190px;
+		}
+		.numbers #no4{
+			position: relative;
+			top: 96px;
+			left: 162px;
+		}
+		.numbers #no5{
+			position: relative;
+			top: 143px;
+			left: 99px;
+		}
+		.numbers #no6{
+			position: relative;
+			top: 160px;
+			left: 22px;
+		}
+		.numbers #no7{
+			position: relative;
+			top: 143px;
+			right: 58px;
+		}
+		.numbers #no8{
+			position: relative;
+			top: 96px;
+			right: 114px;
+		}
+		.numbers #no9{
+			position: relative;
+			top: 40px;
+			right: 145px;
+		}
+		.numbers #no10{
+			position: relative;
+			top: -20px;
+			right: 150px;
+		}
+		.numbers #no11{
+			position: relative;
+			top: -70px;
+			right: 130px;
+		}
+		.clock-handle-hours{
+			border-top:90px solid #444 !important;
+			border:5px solid transparent;
+			background: transparent;
+			width: 0;
+			height: 0;
+			position: relative;
+			/*border-radius: 40px;*/
+			left:145px;
+			top: -68px;
+			/*transform-origin: 30% 50%;*/
+			transform: rotate(180deg);
+		}
+		.clock-handle-mins{
+			border-top:65px solid #444 !important;
+			border:3px solid transparent;
+			background: transparent;
+			width: 0;
+			height: 0;
+			position: relative;
+			/*border-radius: 40px;*/
+			left:105px;
+			top: -64px;
+			/*transform-origin: 30% 50%;*/
+			transform: rotate(60deg);
+		}
+		.clock-handle-secs{
+			border-top:105px solid #f55 !important;
+			border:2px solid transparent;
+			background: transparent;
+			width: 0;
+			height: 0;
+			position: relative;
+			border-radius: 40px;
+			left:200px;
+			top: -170px;
+			z-index: 2;
+			/*transform-origin: 30% 50%;*/
+			transform: rotate(276deg);
+		}
+		.location{
+			color: #fff;
+			font-family: verdana;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		
+		<div class="clock-border">
+			<!-- <p>AM</p> -->
+			<div class="clock-circle">
+				<div class="clock-circle-inner">
+					<div class="clock-circle-inner-inner">
+					</div>
+				</div>
+				<div class="numbers">
+					<span id="no12">12</span><br>
+					<span id="no1">1</span><br>
+					<span id="no2">2</span><br>
+					<span id="no3">3</span>
+					<span id="no4">4</span>
+					<span id="no5">5</span>
+					<span id="no6">6</span>
+					<span id="no7">7</span>
+					<span id="no8">8</span>
+					<span id="no9">9</span>
+					<span id="no10">10</span>
+					<span id="no11">11</span>
+				</div>
+				<div class="clock-handle-hours"></div>
+				<div class="clock-handle-mins"></div>
+				<div class="clock-handle-secs"></div>
+			</div>
+			<p class="location">LAGOS, NIGERIA</p>
+		</div>
+		
+	</div>
+</body>
+</html>

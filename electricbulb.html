@@ -1,0 +1,152 @@
+<!--11 Days of Design with ONLY HTML AND CSS -->
+<!-- DAY 4: ELECTRIC BULB-->
+<!-- AUTHOR: DUNSIN OLUBOBOKUN -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Electric Bulb</title>
+	<style type="text/css">
+		body{
+			padding: 0px;
+			margin: 0px;
+		}
+
+		@keyframes{
+		  0% {
+		    box-shadow: 23px 23px 145px #fff;
+		  }
+		  70% {
+		     box-shadow: 34px 30px 400px 100px #fff;
+		  }
+		  100% {
+		      box-shadow: 0 0 0 0 #eee;
+		  }
+		}
+
+		.container{
+			text-align: center;
+			padding: 50px;
+			background: #333;
+
+		}
+		.bulb-edge{
+			display: inline-block;
+			background: #fff;
+			height: 310px;
+			width: 310px;
+			border-radius: 50% 50% 55% 55%;
+			border: 2px solid #f00;
+			animation:  glow 2.2s infinite;
+			position: relative;
+		}
+		.bulb-bottom1{
+			display: inline-block;
+			width:100px;
+			height:108px;
+			border: 2px solid #f00;
+			position: relative;
+			top: -13px;
+			background: #fff;
+			border-top: none;
+			border-radius: 0px 0px 50px 50px;
+		}
+		.bulb-bottom2{
+			display: inline-block;
+			width:110px;
+			height:90px;
+			border: 2px solid #f00;
+			position: relative;
+			top: -128px;
+			background: #fff;
+		}
+		.bulb-bottom2 #bars{
+			border-bottom: 2px dashed #f00;
+		}
+		.bulb-filament #bar{
+			display: inline-block;
+			height: 125px;
+			border-left: 2px solid #f00;
+			position: relative;
+			top: -351px;
+		}
+		.bulb-filament #circle{
+			display: inline-block;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 2px solid #f00;
+			position: relative;
+			top: -505px;
+		}
+		.bulb-rays{
+			padding: 10px;
+			display: inline-block;
+		}
+		.bulb-rays #ray1{
+			border-left: 2px solid #f00;
+			height: 25px;
+			position: relative;
+			top:-620px;
+		}
+		.bulb-rays #ray2{
+			border-left: 2px solid #f00;
+			height: 25px;
+			position: relative;
+			top:-630px;
+			left: -40px;
+			transform: rotate(145deg);
+		}
+		.bulb-rays #ray3{
+			border-left: 2px solid #f00;
+			height: 25px;
+			position: relative;
+			top:-620px;
+			left: -60px;
+			transform: rotate(105deg);
+		}
+		.bulb-rays #ray4{
+			border-left: 2px solid #f00;
+			height: 25px;
+			position: relative;
+			top:-680px;
+			left: 40px;
+			transform: rotate(45deg);
+		}
+		.bulb-rays #ray5{
+			border-left: 2px solid #f00;
+			height: 25px;
+			position: relative;
+			top:-670px;
+			left: 60px;
+			transform: rotate(75deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		
+		<div class="bulb-edge">
+		</div><br>
+		<div class="bulb-bottom1">
+			
+		</div><br>
+		<div class="bulb-bottom2">
+			<p><div id="bars"></div></p>
+			<p><div id="bars"></div></p>
+			<p><div id="bars"></div></p>
+			<p><div id="bars"></div></p>
+		</div>
+		<div class="bulb-filament">
+			<div id="bar"></div><br>
+			<div id="circle"></div>
+		</div>
+		<div class="bulb-rays">
+			<div id="ray1"></div>
+			<div id="ray2"></div>
+			<div id="ray3"></div>
+			<div id="ray4"></div>
+			<div id="ray5"></div>
+		</div>
+	</div>
+</body>
+</html>

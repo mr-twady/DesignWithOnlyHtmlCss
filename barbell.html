@@ -1,0 +1,123 @@
+<!--11 Days of Design with ONLY HTML AND CSS -->
+<!-- DAY 5: BARBELL (WEIGHT LIFTING)-->
+<!-- AUTHOR: DUNSIN OLUBOBOKUN -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Barbell</title>
+	<style type="text/css">
+		.container{
+			text-align: center;
+			padding: 20%;
+		}
+		.rod{
+			border: 1px solid #555;
+			width: 316px;
+			display: inline-block;
+			height: 20px;
+			transform-origin: 0% 20%;
+			transform: rotate(5deg);
+			position: relative;
+			right:20px;
+			background: #333;
+			top: 10px;
+			left: -26px; 
+			z-index: 2;
+			border-radius: 8px 0 0 8px;
+		}
+		.rod-extended-right{
+			border: 1px solid #555;
+			width: 100px;
+			display: inline-block;
+			height: 20px;
+			transform-origin: 0% 20%;
+			transform: rotate(5deg);
+			position: relative;
+			right:20px;
+			background: #333;
+			top: -238px;
+			left: 308px; 
+			z-index: 1;
+			border-radius: 8px;
+		}
+		.rod-extended-left{
+			border: 1px solid #555;
+			width: 75px;
+			display: inline-block;
+			height: 20px;
+			transform-origin: 0% 20%;
+			transform: rotate(5deg);
+			position: relative;
+			right:20px;
+			background: #333;
+			top: -323px;
+			right: 345px; 
+			border-radius: 8px 0 0 8px;
+		}
+		.right-bell{
+			display: inline-block;
+			height: 125px;
+			width: 125px;
+			border:1px solid #000;
+			border-right: 1px solid transparent;
+			border-radius: 35% 0  0 35%;
+			position: relative;
+			transform: rotate(5deg);
+			top: -30px;
+			left: 220px;
+			z-index:1;
+			background: #444;	 
+		}
+		.right-bell-edge{
+			height: 125px;
+			width: 50px;
+			border-radius: 50%;
+			border:1px solid #000;
+			display: inline-block;
+			transform: rotate(5deg);
+			position: relative;
+			top: -25px;
+			left:190px;
+			background: #555;
+			z-index: 1;
+		}
+		.left-bell{
+			display: inline-block;
+			height: 125px;
+			width: 125px;
+			border:1px solid #000;
+			border-radius: 35% 0 0 35%;
+			position: relative;
+			transform: rotate(5deg);
+			top: -200px;
+			right: 220px;
+			background: #444;
+			z-index: 1;	 
+		}
+		.left-bell-edge{
+			height: 125px;
+			width: 50px;
+			border-radius: 50%;
+			border:1px solid #000;
+			display: inline-block;
+			transform: rotate(5deg);
+			position: relative;
+			top: -195px;
+			right: 252px;
+			background: #555;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="rod"></div><br>
+		<div class="right-bell"></div>
+		<div class="right-bell-edge"></div><br>
+		<div class="left-bell"></div>
+		<div class="left-bell-edge"></div><br>
+		<div class="rod-extended-right"></div><br>
+		<div class="rod-extended-left"></div>
+	</div>
+</body>
+</html>

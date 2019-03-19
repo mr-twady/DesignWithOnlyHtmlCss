@@ -1,0 +1,121 @@
+<!--11 Days of Design with ONLY HTML AND CSS -->
+<!-- DAY 3: IOS CALCULATOR APP -->
+<!-- AUTHOR: DUNSIN OLUBOBOKUN -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IOS Calculator APP</title>
+	<style type="text/css">
+		.wrapper{
+			display: flex;
+			justify-content: center;
+			padding: 50px;
+		}
+		.container{
+			width: 330px;
+			background: #0e0e0e;
+			text-align: center;
+			border-radius: 25px;
+			padding: 20px 5px 15px 5px;
+		}
+		.screen{
+			height: 150px;
+			color: #999;
+			font-family: verdana;
+		}
+		.row{
+			display: flex;
+			justify-content: center;
+
+		}
+		.row .col{
+			flex: 1;
+		}
+		.row .collg{
+			flex: 2;
+		}
+		.row .col button#grey_small{
+			height: 65px;
+			width: 65px;
+			border-radius: 50%;
+			background: #e0e0e0;
+			font-size: 25px;
+			border:none;
+			color: #000;
+		}
+		.row .col button#orange{
+			height: 65px;
+			width: 65px;
+			border-radius: 50%;
+			background: #f9a975;
+			font-size: 25px;
+			border:none;
+			color: #fff;
+		}
+		.row .col button#dark_small{
+			height: 65px;
+			width: 65px;
+			border-radius: 50%;
+			background: #555;
+			font-size: 25px;
+			border:none;
+			color: #fff;
+		}
+		.row .collg button#dark_large{
+			height: 65px;
+			width: 140px;
+			border-radius: 30px;
+			background: #555;
+			font-size: 25px;
+			border:none;
+			color: #fff;
+			text-align: left;
+			padding-left: 20px;
+		}
+		.signature{
+			color: #aaa;
+			font-family: verdana;
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<div class="screen">
+				
+			</div>
+			<div class="row">
+				<div class="col"><button id="grey_small">AC</button></div>
+				<div class="col"><button id="grey_small"><sup>+</sup>/<sub>-</sub></button></div>
+				<div class="col"><button id="grey_small">%</button></div>
+				<div class="col"><button id="orange"><big>÷</big></button></div>
+			</div><br>
+			<div class="row">
+				<div class="col"><button id="dark_small">7</button></div>
+				<div class="col"><button id="dark_small">8</button></div>
+				<div class="col"><button id="dark_small">9</button></div>
+				<div class="col"><button id="orange">x</button></div>
+			</div><br>
+			<div class="row">
+				<div class="col"><button id="dark_small">4</button></div>
+				<div class="col"><button id="dark_small">5</button></div>
+				<div class="col"><button id="dark_small">6</button></div>
+				<div class="col"><button id="orange"><big>-</big></button></div>
+			</div><br>
+			<div class="row">
+				<div class="col"><button id="dark_small">1</button></div>
+				<div class="col"><button id="dark_small">2</button></div>
+				<div class="col"><button id="dark_small">3</button></div>
+				<div class="col"><button id="orange"><big>+</big></button></div>
+			</div><br>
+			<div class="row">
+				<div class="collg"><button id="dark_large">0</button></div>
+				<div class="col"><button id="dark_small"><big>.</big></button></div>
+				<div class="col"><button id="orange"><big>=</big></button></div>
+			</div>
+			<div class="signature"><br>@MR.TWADY</div>
+		</div>
+	</div>
+</body>
+</html>

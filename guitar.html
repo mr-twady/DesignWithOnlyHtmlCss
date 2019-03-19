@@ -1,0 +1,249 @@
+<!--11 Days of Design with ONLY HTML AND CSS -->
+<!-- DAY 5: GUITAR-->
+<!-- AUTHOR: DUNSIN OLUBOBOKUN -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guitar</title>
+	<style type="text/css">
+		
+		.container{
+			padding: 50px;
+		}
+		.guitar-wrapper{
+			padding-top: 450px;
+		}
+		.guitar-body{
+			height:600px;
+			width: 365px;
+			border: 1px solid #000;
+			border-radius:60px 80px 150px 150px; 
+			/*background: #f67;*/
+			/*background-image: linear-gradient(0deg,#b77821,#f1b35e,#b77821);*/
+			background: url(img/wood1.jpeg);
+			box-shadow: inset 10px 12px 45px 10px #222; 
+			border:2px solid #000;
+		}
+		.guitar-body-arc-right{
+			height: 270px;
+			width: 190px;
+			border-radius: 50%;
+			border:2px solid transparent;
+			border-left:2px solid #000;
+			position: relative;
+			top: -530px;
+			left: 248px;
+			background: #fff;
+		}
+		.guitar-body-arc-left{
+			height: 270px;
+			width: 190px;
+			border-radius: 50%;
+			border:2px solid transparent;
+			border-right:2px solid #000;
+			position: relative;
+			top: -810px;
+			right: 246.6px;
+			background: #fff;
+		}
+		.guitar-head{
+			height:160px;
+			width:80px;
+			border: 1px solid #000;
+			border-bottom: 2px solid transparent;
+			border-radius: 15px 15px 50px 50px;
+			position: relative;
+			bottom: 1640px;
+			background-image: url(img/fret.jpg);
+			/*left:1px;*/
+		}
+		.guitar-head .screw{
+			display: flex
+		}
+		.guitar-head .screw i{
+			flex: 1;
+			padding: 20px 8px 5px 8px; 
+		}
+		.guitar-head .screw i span:after{
+			/*background: #000;*/
+			border: 1px solid #000;
+			height: 18px;
+			width: 18px;
+			border-radius: 50%;
+			content: " ø ";
+			background: #aaa;
+		}
+		.guitar-head .screw .left{
+			text-align: left;
+		}
+		.guitar-head .screw .right{
+			text-align: right;
+		}
+		.guitar-neck{
+			height:425px;
+			width:62px;
+			border: 1px solid #000;
+			border-top: 1px solid transparent;
+			border-bottom: 5px double #000;
+			position: relative;
+			bottom: 1675px;
+			background-image: url(img/fret.jpg);
+			z-index: 1;
+		}
+		.guitar-neck #fret:first-child{
+			height: 45px;
+			border-top: 2px solid #824d28;
+			border-bottom: 2px solid #824d28;
+			/*margin-top:0px; */
+		}
+		.guitar-neck #fret{
+			margin-top:0px; 
+			height: 40px;
+			border-bottom: 2px solid #824d28;
+		}
+		.guitar-hole{
+			height: 100px;
+			width: 100px;
+			border:4px double #000;
+			border-radius: 50%;
+			position: relative;
+			bottom: 1715px;
+			padding: 4px 2px 0 2px;
+			background: #fff;
+		}
+		.string-base-bar{
+			border:1px solid #000;
+			border-bottom: 3px double #000;
+			border-radius: 5px 5px 25px 25px;
+			height: 20px;
+			width: 15%;
+			position: relative;
+			bottom: 1650px;
+			background: #44361a;
+			color: #fff;
+		}
+		.nuts{
+			position: relative;
+			bottom: 6px;
+		}
+		.nuts i{
+			font-size: 1.5em;
+		}
+		.guitar-strings{
+			text-align: center;
+			position: relative;
+			bottom: 2400px;
+		}
+		.guitar-strings #string1{
+			border-left: 2px solid #999;
+			height: 651px;
+			width: 20px;
+			display: inline-block;
+			position: relative;
+			top: 76px;
+			z-index: 2;
+			/*border-radius: 50% 0 0 0;*/
+			left:38px;
+		}
+		.guitar-strings #string2{
+			border-left: 2px solid #999;
+			height: 700px;
+			width: 20px;
+			display: inline-block;
+			position: relative;
+			top: -628px;
+			z-index: 2;
+			border-radius: 40% 0 0 0;
+			left: 27px;
+		}
+		.guitar-strings #string3{
+			border-left: 2px solid #999;
+			height: 746px;
+			width: 20px;
+			display: inline-block;
+			position: relative;
+			top: -1378px;
+			z-index: 2;
+			left: 16px;
+			border-radius: 90% 0 0 0;
+		}
+		.guitar-strings #string4{
+			border-right: 2px solid #999;
+			height: 742px;
+			width: 8px;
+			display: inline-block;
+			position: relative;
+			bottom: 2124px;
+			z-index: 2;
+			border-radius: 0 100% 0 0;
+			transform: rotate(-0.5deg);
+			right: 14px; 
+		}
+		.guitar-strings #string5{
+			border-right: 2px solid #999;
+			height: 696px;
+			width: 8px;
+			display: inline-block;
+			position: relative;
+			bottom: 2824px;
+			z-index: 2;
+			border-radius: 0 40% 0 0;
+			right: 24px;
+		}
+		.guitar-strings #string6{
+			border-left: 2px solid #999;
+			height: 660px;
+			width: 8px;
+			display: inline-block;
+			position: relative;
+			bottom: 3490px;
+			z-index: 2;
+			right: 25px;
+		}
+		.signature{
+			position: relative;
+			bottom: 5850px;
+			color: #fff;
+			font-family: georgia;
+		}
+	</style>
+</head>
+<body>
+	<div class="container" align="center">
+		<div class="guitar-wrapper">
+			<div class="guitar-body"></div><br>
+			<div class="guitar-body-arc-right"></div><br>
+			<div class="guitar-body-arc-left"></div><br>
+			<div class="guitar-head">
+				<div class="screw"><i class="left"><span></span></i><i class="right"><span></span></i></div>
+				<div class="screw"><i class="left"><span></span></i><i class="right"><span></span></i></div>
+				<div class="screw"><i class="left"><span></span></i><i class="right"><span></span></i></div>
+			</div><br>
+			<div class="guitar-neck">
+				<p id="fret"></p>
+				<p id="fret"></p>
+				<p id="fret"></p>
+				<p id="fret"></p>
+				<p id="fret"></p>
+				<p id="fret"></p>
+				<p id="fret"></p>
+			</div><br>
+			<div class="guitar-hole"></div><br>
+			<div class="string-base-bar">
+				<div class="nuts">
+					<i>ø</i><i>ø</i><i>ø</i><i>ø</i><i>ø</i><i>ø</i>
+				</div>
+			</div><br>
+			<div class="guitar-strings">
+				<div id="string1"></div><br>
+				<div id="string2"></div><br>
+				<div id="string3"></div><br>
+				<div id="string4"></div><br>
+				<div id="string5"></div><br>
+				<div id="string6"></div> 
+			</div>
+			<!-- <p class="signature">@MR.TWADY</p> -->
+		</div>
+	</div>
+</body>
+</html>
