@@ -1,3 +1,3 @@
 # Design With Only Html Css
 
-This repository contains random design of objects/things/items using only HTML and CSS
+This repository contains design of random objects or items using only HTML and CSS
